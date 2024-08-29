@@ -1,5 +1,5 @@
 ## Description
-I learned python at first for data analysis, but even after a lot of analysis work I didn't have a great applied understanding of the classes and management of the flow of code in python, so I used this project as a chance to apply my knowledge of classes and to sharpen my skills.This project is designed to be a knitting pattern editor to make an easier platform for knitters to share and make patterns for their clothes. This is a project I am currently working on so I am not uploading my final full feature version, but on here is a minimum viable product of a feature in the app. 
+I learned python at first for data analysis, but even after a lot of analysis work I didn't have a great applied understanding of the classes and management of the flow of code in python, so I used this project as a chance to apply my knowledge of classes and to sharpen my skills. This project is designed to be a knitting pattern editor to make an easier platform for knitters to share and make patterns for their clothes. This is a project I am currently working on so I am not uploading my final full feature version, but on here is a minimum viable product of a feature in the app. 
 
 ## How to Run Project
 - Download zip file of project files
