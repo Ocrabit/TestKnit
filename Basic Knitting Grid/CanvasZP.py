@@ -1,16 +1,8 @@
-import math
 import tkinter as tk
 from tkinter import ttk
-
-import tkmacosx
 from PIL import Image, ImageTk
-
 import ImageClickCanvas as ICC
 from CreateGrid import GridTable
-
-import AppKit
-
-
 
 class AutoScrollbar(ttk.Scrollbar):
     """ A scrollbar that hides itself if it's not needed. Works only for grid geometry manager """

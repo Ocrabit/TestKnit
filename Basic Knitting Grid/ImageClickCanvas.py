@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import colorchooser, filedialog
 from PIL import Image, ImageTk, ImageDraw
-import tkmacosx as tkmac
 from CreateGrid import GridTable
 
 

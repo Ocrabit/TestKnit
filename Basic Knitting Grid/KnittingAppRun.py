@@ -1,8 +1,14 @@
 import tkinter as tk
 from tkinter import ttk
 from CanvasZP import CanvasImage
-import tkmacosx
 from CustomMenu import Menubar
+
+# Patch Button issue that somehow still exists
+import sys
+if sys.platform == 'darwin':
+    from tkmacosx import Button
+else:
+    from tkinter import Button
 
 
 class MainWindow(ttk.Frame):
@@ -18,9 +24,9 @@ class MainWindow(ttk.Frame):
         canvas = CanvasImage(self.master, rows, columns)  # create widget
         canvas.grid(row=0, column=0)  # show widget
 
-        draw_btn = tkmacosx.Button(self.master, text='Draw', command=lambda: canvas.enable('draw'))
-        pan_btn = tkmacosx.Button(self.master, text='Pan', command=lambda: canvas.enable('pan'))
-        color_btn = tkmacosx.Button(self.master, text='Choose Color', command=canvas.canvas.choose_color)
+        draw_btn = Button(self.master, text='Draw', command=lambda: canvas.enable('draw'))
+        pan_btn = Button(self.master, text='Pan', command=lambda: canvas.enable('pan'))
+        color_btn = Button(self.master, text='Choose Color', command=canvas.canvas.choose_color)
         draw_btn.grid(row=1, column=0)
         pan_btn.grid(row=2, column=0)
         color_btn.grid(row=3, column=0)
